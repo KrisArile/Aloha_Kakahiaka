@@ -1,0 +1,62 @@
+﻿@page
+@model ALOHA.Pages.Products.IndexModel
+
+@{
+    ViewData["Title"] = "Aloha";
+}
+
+<h1>Aloha</h1>
+
+<p>
+    <a asp-page="Create"><button class="bt1 btcr">Create New</button></a>
+</p>
+<form>
+    
+       <input type = "text" placeholder ="Search here" asp-for="SearchString"/>
+        <input type ="submit" value ="Enter" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Item[0].ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Item[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Item[0].Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Item[0].Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Item) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID"><button class="bt1 bted">Edit</button></a> |
+                <a asp-page="./Details" asp-route-id="@item.ID"><button class="bt1 bted">Details</button></a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID"><button class="bt1 btdlt">Delete</button></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

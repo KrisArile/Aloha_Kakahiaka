@@ -1,0 +1,118 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-image: url(JOSH.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+h1 {
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    color: #668099;
+    padding: 50px;
+    text-align: center;
+}
+.bt2 {
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 30%;
+}
+
+.bt1 {
+    
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btdlt {
+    background-color: #ff4d4d;
+}
+.btdlt:hover {
+    background-color: #ff3333;
+    color: black;
+}
+.bted {
+    background-color: #666699;
+}
+.bted:hover {
+    background-color: #52527a;
+    color: black;
+}
+.btcr:hover {
+    background-color: #0099cc;
+    color: black;
+}
+
+.button1 {
+    background-color: #808080;
+
+
+}
+.button1:hover {
+    background-color: #ddd;
+    color: black;
+}
+.button2 {
+    background-color: #808080;
+}
+
+    .button2:hover {
+        background-color: #ddd;
+        color: black;
+    }
+.button3 {
+    background-color: #808080;
+}
+
+    .button3:hover {
+        background-color: #ddd;
+        color: black;
+    }
+#n {
+    padding: .375rem .75rem;
+    user-select: none;
+    vertical-align: middle;
+    font-weight: 400;
+    background-color: #0099cc;
+    border: 1px solid transparent;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: .25rem;
+    transition: color .15s
+    ease-in-out,background-color .15s
+    ease-in-out,border-color .15s
+    ease-in-out,box-shadow .15s
+    ease-in-out;
+}
+    #n:hover {
+        background-color: #0086b3;
+    }
